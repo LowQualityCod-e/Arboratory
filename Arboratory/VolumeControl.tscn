@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://green_sliderLeft.png" type="Texture" id=2]
+[ext_resource path="res://VolumeControl.gd" type="Script" id=3]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_top = -2.0
+margin_right = -252.0
+margin_bottom = -61.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TurnItDown" type="TextureButton" parent="."]
+margin_left = -0.112671
+margin_top = 6.0
+margin_right = 130.887
+margin_bottom = 117.0
+texture_normal = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VolumeLevel" type="RichTextLabel" parent="."]
+visible = false
+margin_left = 277.657
+margin_top = 186.515
+margin_right = 713.657
+margin_bottom = 438.515
+
+[node name="HSlider" type="HSlider" parent="."]
+margin_left = 79.2394
+margin_top = 169.915
+margin_right = 746.239
+margin_bottom = 257.915
+min_value = -80.0
+max_value = 0.0
+
+[node name="HSlider2" type="HSlider" parent="."]
+margin_left = 80.2253
+margin_top = 281.408
+margin_right = 747.225
+margin_bottom = 335.408
+min_value = -80.0
+max_value = 0.0
+[connection signal="pressed" from="TurnItDown" to="." method="_on_TurnItDown_pressed"]

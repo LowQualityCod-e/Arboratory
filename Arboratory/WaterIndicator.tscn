@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/HUD/wet_icon.png" type="Texture" id=1]
+
+[node name="WaterIndicator" type="Control"]
+anchor_right = 0.052
+anchor_bottom = 0.091
+margin_right = 0.159996
+margin_bottom = -0.280006
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WaterIndicator" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

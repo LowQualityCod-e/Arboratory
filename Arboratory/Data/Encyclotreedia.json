@@ -2,92 +2,106 @@
 	"Template": {
         "treeName": "",
 		"seedImage": "",
-		"sapplingImage": "",
+		"saplingImage": "",
 		"treeImage": "",
 		"Description": ""
 	},
 	"1": {
         "treeName": "The Sample Tree",
 		"seedImage": "res://Assets/Plants/seeds/SampleSeed.png",
-		"sapplingImage": "res://Assets/Art/SamplePlant.png",
+		"saplingImage": "res://Assets/Art/SamplePlant.png",
 		"treeImage": "",
 		"Description": "This is an example Tree Description"
 	},
 	"2": {
         "treeName": "Lavender Tree",
 		"seedImage": "res://Assets/Plants/seeds/seed-laventree.png",
-		"sapplingImage": "res://Assets/Plants/trees/laventree_owo.png",
+		"saplingImage": "res://Assets/Plants/trees/laventree_owo.png",
 		"treeImage": ""   ,
 		"Description": ""
 	},
 	"3": {
         "treeName": "Bunny Tree",
 		"seedImage": "res://Assets/Plants/seeds/bunny_seed.png",
-		"sapplingImage": "res://Assets/Plants/trees/bunny_sapling.png",
+		"saplingImage": "res://Assets/Plants/saplings/bunny_sapling.png",
 		"treeImage": "",
 		"Description": ""
 	},
 	"4": {
-        "treeName": "Lighting Tree",
-		"seedImage": "res://Assets/Plants/seeds/Lighting_seed.png",
-		"sapplingImage": "res://Assets/Plants/trees/Lighting_sapling.png",
+        "treeName": "Lightning Tree",
+		"seedImage": "res://Assets/Plants/seeds/lightning_seed.png",
+		"saplingImage": "res://Assets/Plants/saplings/lightning_sapling.png",
 		"treeImage": "",
 		"Description": ""
 	},
     "5": {
         "treeName": "Sand Tree",
-		"seedImage": "res://Assets/Plants/seeds/Sand_Seed.png",
-		"sapplingImage": "res://Assets/Plants/trees/Sand_Sapling.png",
-		"treeImage": "",
+		"seedImage": "res://Assets/Plants/seeds/sand_seed.png",
+		"saplingImage": "res://Assets/Plants/saplings/sand_sapling.png",
+		"treeImage": "res://Assets/Plants/trees/sand_tree.png",
 		"Description": ""
 	},
     "6": {
         "treeName": "Air Tree",
 		"seedImage": "res://Assets/Plants/seeds/air_seed.png",
-		"sapplingImage": "res://Assets/Plants/trees/air_sapling.png",
+		"saplingImage": "res://Assets/Plants/saplings/air_sapling.png",
 		"treeImage": "res://Assets/Plants/trees/air_tree.png",
 		"Description": ""
 	},
     "7": {
         "treeName": "Cotton Candy Tree",
-		"seedImage": "res://Assets/Plants/seeds/cottonCandy_Seed.png",
-		"sapplingImage": "res://Assets/Plants/trees/cottonCandy_sapling.png",
+		"seedImage": "res://Assets/Plants/seeds/cotton_candy_seed.png",
+		"saplingImage": "res://Assets/Plants/saplings/cotton_candy_sapling.png",
 		"treeImage": "",
 		"Description": ""
 	},
     "8": {
         "treeName": "Earth Tree",
 		"seedImage": "res://Assets/Plants/seeds/earth_seed.png",
-		"sapplingImage": "res://Assets/Plants/trees/earth_sapling.png",
+		"saplingImage": "res://Assets/Plants/saplings/earth_sapling.png",
 		"treeImage": "res://Assets/Plants/trees/earth_tree.png",
 		"Description": ""
 	},
     "9": {
         "treeName": "Fire Tree",
 		"seedImage": "res://Assets/Plants/seeds/fire_seed.png",
-		"sapplingImage": "res://Assets/Plants/trees/fire_sapling.png",
+		"saplingImage": "res://Assets/Plants/saplings/fire_sapling.png",
 		"treeImage": "res://Assets/Plants/trees/fire_tree.png",
 		"Description": ""
 	},
     "10": {
         "treeName": "Magma Tree",
 		"seedImage": "res://Assets/Plants/seeds/magma_seed.png",
-		"sapplingImage": "res://Assets/Plants/trees/magma_sapling.png",
+		"saplingImage": "res://Assets/Plants/saplings/magma_sapling.png",
 		"treeImage": "res://Assets/Plants/trees/magma_tree.png",
 		"Description": ""
 	},
     "11": {
         "treeName": "Snoop Dog Tree",
 		"seedImage": "res://Assets/Plants/seeds/snoop_dogg_seed.png",
-		"sapplingImage": "res://Assets/Plants/trees/snoop_dogg_sapling.png",
+		"saplingImage": "res://Assets/Plants/saplings/snoop_dogg_sapling.png",
 		"treeImage": "res://Assets/Plants/trees/snoop_dogg_tree.png",
 		"Description": ""
 	},
     "12": {
         "treeName": "Water Tree",
 		"seedImage": "res://Assets/Plants/seeds/water_seed.png",
-		"sapplingImage": "res://Assets/Plants/trees/water_sapling.png",
+		"saplingImage": "res://Assets/Plants/saplings/water_sapling.png",
 		"treeImage": "res://Assets/Plants/trees/water_tree.png",
 		"Description": ""
-	}
+	},
+    "13": {
+        "treeName": "Bubble Tree",
+        "seedImage": "res://Assets/Plants/seeds/bubble_seed.png",
+        "saplingImage": "res://Assets/Plants/saplings/bubble_sapling.png",
+        "treeImage": "res://Assets/Plants/trees/bubble_tree.png",
+        "Description": ""
+    },
+    "14": {
+        "treeName": "Tree Tree",
+        "seedImage": "res://Assets/Plants/seeds/tree_seed.png",
+        "saplingImage": "res://Assets/Plants/saplings/tree_sapling.png",
+        "treeImage": "res://Assets/Plants/trees/tree_tree.png",
+        "Description": ""
+    }
 }

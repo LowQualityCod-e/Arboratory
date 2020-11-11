@@ -3,11 +3,8 @@
 [ext_resource path="res://water.tscn" type="PackedScene" id=1]
 [ext_resource path="res://dropZone.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Art/SamplePlant.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Plants/trees/laventree_owo.png" type="Texture" id=6]
 [ext_resource path="res://aSeeds.tscn" type="PackedScene" id=7]
-
-[sub_resource type="StreamTexture" id=1]
-flags = 4
-load_path = "res://.import/laventree_owo.png-bf1b5c3b8db4ce2e3295dabf85705797.stex"
 
 [node name="Node2D" type="Node2D"]
 
@@ -23,10 +20,10 @@ texture = ExtResource( 4 )
 visible = false
 position = Vector2( -5.88621, -13.4384 )
 scale = Vector2( 0.333629, 0.333629 )
-texture = SubResource( 1 )
+texture = ExtResource( 6 )
 
 [node name="water1" parent="." instance=ExtResource( 1 )]
-position = Vector2( 795.16, 235.171 )
+position = Vector2( 557.16, 231.171 )
 
 [node name="draggable" parent="." instance=ExtResource( 7 )]
 position = Vector2( 169.525, 440.497 )

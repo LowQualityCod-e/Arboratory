@@ -1,0 +1,400 @@
+[gd_scene load_steps=36 format=2]
+
+[ext_resource path="res://Fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://PlantingNotifier.gd" type="Script" id=2]
+[ext_resource path="res://Fonts/Itim-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Progress.gd" type="Script" id=4]
+[ext_resource path="res://Number.gd" type="Script" id=5]
+[ext_resource path="res://Assets/HUD/button_orange.png" type="Texture" id=7]
+[ext_resource path="res://Assets/HUD/levelBackground.png" type="Texture" id=8]
+[ext_resource path="res://Assets/HUD/title.png" type="Texture" id=9]
+[ext_resource path="res://Assets/HUD/level_bar.png" type="Texture" id=11]
+[ext_resource path="res://Assets/HUD/level_bar_filled.png" type="Texture" id=12]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 43
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxTexture" id=3]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="StyleBoxTexture" id=4]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="StyleBoxTexture" id=5]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="StyleBoxTexture" id=6]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="StyleBoxTexture" id=7]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="StyleBoxTexture" id=8]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="StyleBoxTexture" id=9]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="StyleBoxTexture" id=10]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="StyleBoxTexture" id=11]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 25
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxTexture" id=13]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="StyleBoxTexture" id=14]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="StyleBoxTexture" id=15]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 25
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxTexture" id=17]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="StyleBoxTexture" id=18]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="StyleBoxTexture" id=19]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 25
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxTexture" id=21]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="StyleBoxTexture" id=22]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="StyleBoxTexture" id=23]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 150, 50 )
+
+[sub_resource type="DynamicFont" id=24]
+size = 25
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=25]
+size = 34
+extra_spacing_top = -3
+font_data = ExtResource( 3 )
+
+[node name="PlantingNotifier" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="PlantingNotifierMessage" type="Label" parent="."]
+margin_right = 186.0
+margin_bottom = 99.0
+custom_fonts/font = SubResource( 1 )
+text = "
+"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WaterTree" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 2 )
+text = "Water Tree"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FireTree" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 1 )
+text = "Fire Tree"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EarthTree" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 1 )
+text = "Earth Tree"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AirTree" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 1 )
+text = "AirTree"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MagmaTree" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 1 )
+text = "Magma Tree"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SnoopTree" type="Button" parent="."]
+margin_right = 83.0
+margin_bottom = 20.0
+text = "Snoop Tree"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CottonCandyTree" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LightningTree" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BunnyTree" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SandTree" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BubbleTree" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TreeTree" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClearPlots" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 150, 50 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Clear All Plots"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClearSinglePlot" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 150, 50 )
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Clear Plot"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Return" type="Button" parent="."]
+anchor_top = 0.00105509
+anchor_bottom = 0.00105509
+margin_left = 5.09827
+margin_top = 50.0
+margin_right = 80.0983
+margin_bottom = 67.3031
+rect_min_size = Vector2( 150, 50 )
+custom_styles/hover = SubResource( 9 )
+custom_styles/pressed = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
+custom_fonts/font = SubResource( 12 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Return"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Water" type="Button" parent="."]
+anchor_top = 0.00105512
+anchor_bottom = 0.00105512
+margin_left = -1.0
+margin_top = 0.366928
+margin_right = 149.0
+margin_bottom = 50.3669
+rect_min_size = Vector2( 150, 50 )
+custom_styles/hover = SubResource( 13 )
+custom_styles/pressed = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
+custom_fonts/font = SubResource( 16 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Water"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExitFarm" type="Button" parent="."]
+margin_left = 4.34314
+margin_top = 4.23611
+margin_right = 69.3431
+margin_bottom = 51.2361
+rect_min_size = Vector2( 150, 50 )
+custom_styles/hover = SubResource( 17 )
+custom_styles/pressed = SubResource( 18 )
+custom_styles/normal = SubResource( 19 )
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Merge"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="treeDex_button2" type="Button" parent="."]
+margin_right = 89.0
+margin_bottom = 31.0
+rect_min_size = Vector2( 150, 50 )
+custom_styles/hover = SubResource( 21 )
+custom_styles/pressed = SubResource( 22 )
+custom_styles/normal = SubResource( 23 )
+custom_fonts/font = SubResource( 24 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "TreeDex"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgressBar" type="MarginContainer" parent="."]
+anchor_right = 1.0
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 20.0001
+margin_bottom = 62.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ProgressBar"]
+margin_right = 1920.0
+margin_bottom = 42.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ProgressBar/HBoxContainer"]
+margin_right = 530.0
+margin_bottom = 42.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ProgressBar/HBoxContainer/VBoxContainer"]
+margin_right = 530.0
+margin_bottom = 42.0
+
+[node name="Words" type="MarginContainer" parent="ProgressBar/HBoxContainer/VBoxContainer/HBoxContainer"]
+margin_right = 200.0
+margin_bottom = 42.0
+
+[node name="Background" type="NinePatchRect" parent="ProgressBar/HBoxContainer/VBoxContainer/HBoxContainer/Words"]
+margin_right = 200.0
+margin_bottom = 42.0
+rect_min_size = Vector2( 200, 40 )
+texture = ExtResource( 8 )
+
+[node name="LevelText" type="TextureRect" parent="ProgressBar/HBoxContainer/VBoxContainer/HBoxContainer/Words/Background"]
+margin_left = -13.9797
+margin_top = -14.9783
+margin_right = 128.02
+margin_bottom = 67.0217
+texture = ExtResource( 9 )
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Number" type="Label" parent="ProgressBar/HBoxContainer/VBoxContainer/HBoxContainer/Words/Background"]
+anchor_left = -0.00166428
+anchor_right = 0.998336
+anchor_bottom = 1.0
+margin_left = 0.332855
+margin_right = -44.6672
+margin_bottom = 2.0
+custom_fonts/font = SubResource( 25 )
+align = 2
+valign = 1
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Progress" type="TextureProgress" parent="ProgressBar/HBoxContainer/VBoxContainer/HBoxContainer"]
+margin_left = 204.0
+margin_right = 530.0
+margin_bottom = 42.0
+value = 50.0
+texture_under = ExtResource( 11 )
+texture_progress = ExtResource( 12 )
+script = ExtResource( 4 )
+[connection signal="pressed" from="WaterTree" to="." method="_on_WaterTree_pressed"]
+[connection signal="pressed" from="FireTree" to="." method="_on_FireTree_pressed"]
+[connection signal="pressed" from="EarthTree" to="." method="_on_EarthTree_pressed"]
+[connection signal="pressed" from="AirTree" to="." method="_on_AirTree_pressed"]
+[connection signal="pressed" from="MagmaTree" to="." method="_on_MagmaTree_pressed"]
+[connection signal="pressed" from="SnoopTree" to="." method="_on_SnoopTree_pressed"]
+[connection signal="pressed" from="CottonCandyTree" to="." method="_on_CottonCandyTree_pressed"]
+[connection signal="pressed" from="LightningTree" to="." method="_on_LightningTree_pressed"]
+[connection signal="pressed" from="BunnyTree" to="." method="_on_BunnyTree_pressed"]
+[connection signal="pressed" from="SandTree" to="." method="_on_SandTree_pressed"]
+[connection signal="pressed" from="BubbleTree" to="." method="_on_BubbleTree_pressed"]
+[connection signal="pressed" from="TreeTree" to="." method="_on_TreeTree_pressed"]
+[connection signal="pressed" from="ClearPlots" to="." method="_on_ClearPlots_pressed"]
+[connection signal="pressed" from="ClearSinglePlot" to="." method="_on_ClearSinglePlot_pressed"]
+[connection signal="pressed" from="Return" to="." method="_on_Return_pressed"]
+[connection signal="pressed" from="Water" to="." method="_on_Water_pressed"]
+[connection signal="pressed" from="ExitFarm" to="." method="_on_ExitFarm_pressed"]

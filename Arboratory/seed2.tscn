@@ -3,10 +3,6 @@
 [ext_resource path="res://DragNDrop.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Plants/seeds/seed-laventree.png" type="Texture" id=2]
 
-
-
-
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 36.0809, 61.675 )
 

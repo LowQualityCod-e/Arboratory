@@ -30,6 +30,7 @@ func disable_items():
 func unlock(id):
 	print ("Signal Recieved")
 	dropdown.set_item_disabled(int(id), false)
+	Leveling.gain_xp(5)
 
 #Changes the Dex to represent the item selected
 func on_item_selected(id):
@@ -41,6 +42,7 @@ func on_item_selected(id):
 func _on_exit_button_pressed():
 	self.visible = false
 	get_tree().paused = false
+	get_tree().call_group("seedGroup","show")
 
 #General Back Button function
 func _on_back_button_pressed():
@@ -84,7 +86,7 @@ func _on_next_button_pressed():
 #Generic loading tree function
 func load_tree():
 	$tree_id.text = str(key)
-	$Tree_Art.texture = load(seedData[str(key)]["sapplingImage"])
+	$Tree_Art.texture = load(seedData[str(key)]["saplingImage"])
 	$tree_name.text = seedData[str(key)]["treeName"]
 	$tree_description.text = seedData[str(key)]["Description"]
 	$tree_properties.text = "Coming Soon"
