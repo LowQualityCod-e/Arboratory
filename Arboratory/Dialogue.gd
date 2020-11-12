@@ -19,6 +19,7 @@ func _ready():
 	set_process_input(true)
 	
 func select_dialogue():
+	get_tree().get_root().find_node("Dialogue Audio", true, false).play()
 	match Leveling.level:
 		1:
 			print('successfully did the thing')

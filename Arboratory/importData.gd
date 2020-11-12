@@ -12,6 +12,10 @@ func _ready():
 	for key in seed_data:
 		seed_data[str(key)]["seedImage"] = load(seed_data[str(key)]["seedImage"])
 	
+	var background = AudioStreamPlayer.new()
+	self.add_child(background)
+	background.stream = load("res://Assets/Audio/General Sound.ogg")
+	#background.play()
 	#var levelData_file = File.new()
 	#levelData_file.open("res://Data/LevelEvents.json", File.READ)
 	#var levelData_json = JSON.parse(levelData_file.get_as_test())

@@ -301,11 +301,13 @@ func _new_farm():
 							max_seed+=1
 				else:
 					$Inventory._add_to_inventory("seed",trees[x][y].treeName)
+	get_tree().get_root().find_node("Harvesting Audio", true, false).play()
 	$Farm._clear_plots()
 	
 #clears a single plot
 func _new_plot():
 	if ready_to_clear_plot == true:
+		get_tree().get_root().find_node("Harvesting Audio", true, false).play()
 		$Farm._clear_single_plot()
 	else:
 		free_tree = true

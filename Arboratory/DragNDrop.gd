@@ -115,6 +115,7 @@ It will also add the sapling to the inventory and unlock the type in the dex.
 func changeSeed(which):
 	var seedData = ImportData.seed_data
 	if time_to_merge == false:
+		get_tree().get_root().find_node("Planting Audio", true, false).play()
 		for key in seedData:
 			if seedData[key]["seedImage"] == which.get_node("SeedImage").texture:
 				which.get_node("SeedImage").texture = load(seedData[key]["saplingImage"])
