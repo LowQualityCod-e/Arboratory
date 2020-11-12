@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://RichTextLabel.gd" type="Script" id=1]
 [ext_resource path="res://Button.gd" type="Script" id=2]
@@ -9,7 +9,6 @@
 [ext_resource path="res://Timer3.gd" type="Script" id=7]
 [ext_resource path="res://icon.png" type="Texture" id=8]
 [ext_resource path="res://Sprite.gd" type="Script" id=9]
-[ext_resource path="res://Assets/Audio/Dialogue.wav" type="AudioStream" id=10]
 [ext_resource path="res://RichTextLabel2.gd" type="Script" id=11]
 
 [node name="Node2D" type="Node2D"]
@@ -114,22 +113,21 @@ script = ExtResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Dialogue Audio" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 10 )
 [connection signal="hideSprite" from="RichTextLabel" to="Sprite" method="_on_RichTextLabel_hideSprite"]
 [connection signal="releaseTheButtons" from="RichTextLabel" to="Button2" method="_on_RichTextLabel_releaseTheButtons"]
 [connection signal="releaseTheButtons" from="RichTextLabel" to="Button" method="_on_RichTextLabel_releaseTheButtons"]
 [connection signal="showSprite" from="RichTextLabel" to="Sprite" method="_on_RichTextLabel_showSprite"]
 [connection signal="timeout" from="Timer" to="RichTextLabel" method="_on_Timer_timeout"]
 [connection signal="pressed" from="Button" to="Timer2" method="_on_Button_pressed"]
-[connection signal="pressed" from="Button" to="Happy" method="_on_Button_pressed"]
+
 [connection signal="pressed" from="Button" to="RichTextLabel" method="_on_Button_pressed"]
+[connection signal="pressed" from="Button" to="Happy" method="_on_Button_pressed"]
 [connection signal="button_up" from="Button2" to="Button2" method="_on_Button2_button_up"]
 [connection signal="pressed" from="Button2" to="Timer3" method="_on_Button2_pressed"]
-[connection signal="pressed" from="Button2" to="Button2" method="_on_Button2_pressed"]
-[connection signal="pressed" from="Button2" to="angry" method="_on_Button2_pressed"]
+
 [connection signal="pressed" from="Button2" to="RichTextLabel" method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button2" to="angry" method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_Button2_pressed"]
 [connection signal="byeButtons" from="Happy" to="Button2" method="_on_Happy_byeButtons"]
 [connection signal="byeButtons" from="Happy" to="Button" method="_on_Happy_byeButtons"]
 [connection signal="endSequence" from="Happy" to="Sprite" method="_on_Happy_endSequence"]

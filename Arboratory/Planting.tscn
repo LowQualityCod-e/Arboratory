@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://water.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Pot.tscn" type="PackedScene" id=2]
@@ -12,9 +12,6 @@
 [ext_resource path="res://Assets/Art/arboretum_background.png" type="Texture" id=10]
 [ext_resource path="res://Assets/HUD/gear.png" type="Texture" id=11]
 [ext_resource path="res://Assets/HUD/button_green.png" type="Texture" id=12]
-[ext_resource path="res://Assets/Audio/Planting.wav" type="AudioStream" id=13]
-[ext_resource path="res://Assets/Audio/Dialogue.wav" type="AudioStream" id=14]
-[ext_resource path="res://Assets/Audio/Harvesting.wav" type="AudioStream" id=15]
 
 [sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 3 )
@@ -142,18 +139,6 @@ visible = false
 show_behind_parent = true
 position = Vector2( 960, 540 )
 texture = ExtResource( 10 )
-
-[node name="Harvesting Audio" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 15 )
-volume_db = -18.087
-
-[node name="Planting Audio" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 13 )
-volume_db = -13.565
-
-[node name="Dialogue Audio" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 14 )
-volume_db = -9.947
 [connection signal="area_shape_entered" from="Pot" to="Pot" method="_on_Pot_area_shape_entered"]
 [connection signal="pressed" from="treeDex_button" to="." method="_on_treeDex_button_pressed"]
 [connection signal="pressed" from="FarmButton" to="." method="_on_FarmButton_pressed"]
