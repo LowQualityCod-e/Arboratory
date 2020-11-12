@@ -41,6 +41,11 @@ animations = [ {
 "name": "dead",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 10 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "magma",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 19 ), ExtResource( 15 ) ],
 "loop": true,
 "name": "bunny",
@@ -59,11 +64,6 @@ animations = [ {
 "frames": [ ExtResource( 13 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "water",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 10 ), ExtResource( 3 ) ],
-"loop": true,
-"name": "magma",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 26 ), ExtResource( 27 ) ],
@@ -112,7 +112,6 @@ font_data = ExtResource( 33 )
 script = ExtResource( 1 )
 
 [node name="healthDeduction" type="Timer" parent="."]
-wait_time = 3.0
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )

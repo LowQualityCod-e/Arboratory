@@ -141,5 +141,7 @@ position = Vector2( 960, 540 )
 texture = ExtResource( 10 )
 [connection signal="area_shape_entered" from="Pot" to="Pot" method="_on_Pot_area_shape_entered"]
 [connection signal="pressed" from="treeDex_button" to="." method="_on_treeDex_button_pressed"]
+[connection signal="add_seeds" from="BaseFarmGrid" to="." method="_new_seed"]
+[connection signal="return_to_planting" from="BaseFarmGrid" to="." method="_return_to_planting"]
 [connection signal="pressed" from="FarmButton" to="." method="_on_FarmButton_pressed"]
 [connection signal="pressed" from="PauseButton" to="." method="_on_PauseButton_pressed"]
