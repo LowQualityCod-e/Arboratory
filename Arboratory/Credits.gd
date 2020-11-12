@@ -1,4 +1,4 @@
-extends Control
+extends Node2D
 
 
 # Declare member variables here. Examples:
@@ -16,13 +16,5 @@ func _ready():
 #	pass
 
 
-func _on_TextureButton_pressed():
-	get_tree().change_scene("res://Farm.tscn") # Replace with function body.
-
-
-func _on_VolumeButton_pressed():
-	get_tree().change_scene("res://VolumeControl.tscn") # Replace with function body.
-
-
 func _on_Button_pressed():
-	get_tree().change_scene("res://Credits.tscn") # Replace with function body.
+	get_tree().change_scene("res://MainMenu.tscn") # Replace with function body.

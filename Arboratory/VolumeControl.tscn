@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
+[ext_resource path="res://Assets/HUD/wet_icon.png" type="Texture" id=1]
 [ext_resource path="res://green_sliderLeft.png" type="Texture" id=2]
 [ext_resource path="res://VolumeControl.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Art/arboretum_background.png" type="Texture" id=4]
+[ext_resource path="res://Assets/HUD/dry_icon.png" type="Texture" id=5]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -15,11 +18,62 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1916.0
+margin_bottom = 1082.0
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+margin_left = 1366.81
+margin_top = 266.05
+margin_right = 1466.81
+margin_bottom = 366.05
+rect_pivot_offset = Vector2( 32.4065, 45.0814 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+margin_left = 1366.81
+margin_top = 502.517
+margin_right = 1466.81
+margin_bottom = 602.517
+rect_pivot_offset = Vector2( 32.4065, 45.0814 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+margin_left = 533.308
+margin_top = 272.685
+margin_right = 633.308
+margin_bottom = 372.685
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="."]
+margin_left = 533.308
+margin_top = 502.444
+margin_right = 633.308
+margin_bottom = 602.444
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="TurnItDown" type="TextureButton" parent="."]
-margin_left = -0.112671
-margin_top = 6.0
-margin_right = 130.887
-margin_bottom = 117.0
+margin_left = 11.6268
+margin_top = 11.0312
+margin_right = 142.626
+margin_bottom = 122.031
 texture_normal = ExtResource( 2 )
 expand = true
 __meta__ = {
@@ -34,18 +88,18 @@ margin_right = 713.657
 margin_bottom = 438.515
 
 [node name="HSlider" type="HSlider" parent="."]
-margin_left = 79.2394
-margin_top = 169.915
-margin_right = 746.239
-margin_bottom = 257.915
+margin_left = 671.245
+margin_top = 273.893
+margin_right = 1338.24
+margin_bottom = 361.893
 min_value = -80.0
 max_value = 0.0
 
 [node name="HSlider2" type="HSlider" parent="."]
-margin_left = 80.2253
-margin_top = 281.408
-margin_right = 747.225
-margin_bottom = 335.408
+margin_left = 670.554
+margin_top = 536.323
+margin_right = 1337.55
+margin_bottom = 590.323
 min_value = -80.0
 max_value = 0.0
 [connection signal="pressed" from="TurnItDown" to="." method="_on_TurnItDown_pressed"]

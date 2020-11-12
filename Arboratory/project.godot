@@ -16,20 +16,14 @@ _global_script_class_icons={
 [application]
 
 config/name="Arboratory"
-run/main_scene="res://Planting.tscn"
-config/icon="res://Assets/Art/arboratory_logo_a.png"
+run/main_scene="res://Sample.tscn"
+config/icon="res://icon.png"
 
 [autoload]
 
-ImportData="*res://importData.gd"
 PauseMenu="*res://PauseMenu.tscn"
+ImportData="*res://importData.gd"
 Leveling="*res://leveling.gd"
-
-[display]
-
-window/size/width=1920
-window/size/height=1080
-window/stretch/mode="2d"
 
 [input]
 
@@ -60,5 +54,7 @@ ui_click={
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
+vram_compression/import_etc2=false
 environment/default_environment="res://default_env.tres"

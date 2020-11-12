@@ -166,7 +166,10 @@ the health deduction timer.
 func _water_tree():
 	if not dead:
 		last_watering_time = OS.get_unix_time()
-		health = MAX_HEALTH;
+		if health != MAX_HEALTH:
+			health += int((MAX_HEALTH - health) * 0.5) + 1
+		if health > MAX_HEALTH:
+			health = MAX_HEALTH
 		wetness = "Wet"
 		#_update_stats()
 		$healthDeduction.stop()
