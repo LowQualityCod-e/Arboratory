@@ -195,6 +195,8 @@ volume_db = -19.066
 [connection signal="timeout" from="Control/Timer" to="Control/RichTextLabel" method="_on_Timer_timeout"]
 [connection signal="pressed" from="Control/Button" to="Control/RichTextLabel" method="_on_Button_pressed"]
 [connection signal="button_up" from="Control/Button2" to="Control/Button2" method="_on_Button2_button_up"]
+[connection signal="pressed" from="Control/Button2" to="Timer3" method="_on_Button2_pressed"]
+[connection signal="pressed" from="Control/Button2" to="Control/RichTextLabel" method="_on_Button2_pressed"]
 [connection signal="pressed" from="Control/Button2" to="Control/Button2" method="_on_Button2_pressed"]
 [connection signal="pressed" from="Control/Button2" to="Timer3" method="_on_Button2_pressed"]
 [connection signal="pressed" from="Control/Button2" to="Control/RichTextLabel" method="_on_Button2_pressed"]
