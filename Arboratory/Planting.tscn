@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://water.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Pot.tscn" type="PackedScene" id=2]
@@ -13,6 +13,9 @@
 [ext_resource path="res://Assets/HUD/pause_button.png" type="Texture" id=11]
 [ext_resource path="res://Assets/HUD/button_green.png" type="Texture" id=12]
 [ext_resource path="res://DialogueBox.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Assets/Sound/Harvesting.wav" type="AudioStream" id=14]
+[ext_resource path="res://Assets/Sound/Planting.wav" type="AudioStream" id=15]
+[ext_resource path="res://Assets/Sound/General Sound.ogg" type="AudioStream" id=16]
 
 [sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 3 )
@@ -144,6 +147,15 @@ texture = ExtResource( 10 )
 [node name="DialogueBox" parent="." instance=ExtResource( 13 )]
 position = Vector2( 972.834, 794.764 )
 scale = Vector2( 0.5, 0.5 )
+
+[node name="Planting Sound Effect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 15 )
+
+[node name="Game Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+
+[node name="Harvesting Sound Effect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
 [connection signal="area_shape_entered" from="Pot" to="Pot" method="_on_Pot_area_shape_entered"]
 [connection signal="pressed" from="treeDex_button" to="." method="_on_treeDex_button_pressed"]
 [connection signal="add_seeds" from="BaseFarmGrid" to="." method="_new_seed"]

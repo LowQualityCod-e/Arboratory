@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://RichTextLabel.gd" type="Script" id=1]
 [ext_resource path="res://Button.gd" type="Script" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://Fonts/Itim-Regular.ttf" type="DynamicFontData" id=15]
 [ext_resource path="res://Assets/Art/yoon.png" type="Texture" id=16]
 [ext_resource path="res://Sprite3.gd" type="Script" id=17]
+[ext_resource path="res://Assets/Sound/Dialogue.wav" type="AudioStream" id=18]
 
 [sub_resource type="DynamicFont" id=1]
 size = 64
@@ -175,6 +176,10 @@ script = ExtResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Dialogue Sound Effect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 18 )
+volume_db = -19.066
 [connection signal="hideBox" from="Control/RichTextLabel" to="Control/Box" method="_on_RichTextLabel_hideBox"]
 [connection signal="hideButtons" from="Control/RichTextLabel" to="Control/Button2" method="_on_RichTextLabel_hideButtons"]
 [connection signal="hideButtons" from="Control/RichTextLabel" to="Control/Button" method="_on_RichTextLabel_hideButtons"]
@@ -190,6 +195,6 @@ __meta__ = {
 [connection signal="timeout" from="Control/Timer" to="Control/RichTextLabel" method="_on_Timer_timeout"]
 [connection signal="pressed" from="Control/Button" to="Control/RichTextLabel" method="_on_Button_pressed"]
 [connection signal="button_up" from="Control/Button2" to="Control/Button2" method="_on_Button2_button_up"]
+[connection signal="pressed" from="Control/Button2" to="Control/Button2" method="_on_Button2_pressed"]
 [connection signal="pressed" from="Control/Button2" to="Timer3" method="_on_Button2_pressed"]
 [connection signal="pressed" from="Control/Button2" to="Control/RichTextLabel" method="_on_Button2_pressed"]
-[connection signal="pressed" from="Control/Button2" to="Control/Button2" method="_on_Button2_pressed"]

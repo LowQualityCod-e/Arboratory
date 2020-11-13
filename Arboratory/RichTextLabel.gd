@@ -36,6 +36,7 @@ var orderIndex = 0
 var info = {}
 
 func select_dialogue():
+	get_tree().get_root().find_node("Dialogue Sound Effect", true, false).play()
 	match Leveling.level:
 		1:
 			print('successfully did the thing')
@@ -126,6 +127,7 @@ func _input(event):
 		choices = info[character]["choices"]
 		if get_visible_characters() > get_total_character_count():
 			if dialogue_index < dialogue.size() - 1:
+				get_tree().get_root().find_node("Dialogue Sound Effect", true, false).play()
 				dialogue_index += 1
 				set_bbcode(dialogue[dialogue_index])
 				set_visible_characters(0)
