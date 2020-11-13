@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://RichTextLabel.gd" type="Script" id=1]
 [ext_resource path="res://Button.gd" type="Script" id=2]
@@ -7,16 +7,120 @@
 [ext_resource path="res://Happy.gd" type="Script" id=5]
 [ext_resource path="res://Timer2.gd" type="Script" id=6]
 [ext_resource path="res://Timer3.gd" type="Script" id=7]
-[ext_resource path="res://icon.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Plants/trees/Tree_of_Wisdom_color.png" type="Texture" id=8]
 [ext_resource path="res://Sprite.gd" type="Script" id=9]
+[ext_resource path="res://love_tree_sketch2.png" type="Texture" id=10]
 [ext_resource path="res://RichTextLabel2.gd" type="Script" id=11]
+[ext_resource path="res://Sprite2.gd" type="Script" id=12]
+[ext_resource path="res://Assets/HUD/text_box_refined.png" type="Texture" id=13]
+[ext_resource path="res://Box.gd" type="Script" id=14]
+[ext_resource path="res://Fonts/Itim-Regular.ttf" type="DynamicFontData" id=15]
+[ext_resource path="res://Assets/Art/yoon.png" type="Texture" id=16]
+[ext_resource path="res://Sprite3.gd" type="Script" id=17]
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+font_data = ExtResource( 15 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 15 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 15 )
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 3, 136 )
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
 [node name="Control" type="Control" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -20.0
+margin_top = -20.0
+margin_right = 20.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Control"]
+position = Vector2( 18.1648, -721.443 )
+texture = ExtResource( 8 )
+script = ExtResource( 9 )
+
+[node name="Sprite2" type="Sprite" parent="Control"]
+position = Vector2( 21.2477, -505.805 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 10 )
+script = ExtResource( 12 )
+
+[node name="Sprite3" type="Sprite" parent="Control"]
+position = Vector2( 0, -495 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 16 )
+script = ExtResource( 17 )
+
+[node name="Box" type="Sprite" parent="Control"]
+texture = ExtResource( 13 )
+script = ExtResource( 14 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -687.0
+margin_top = -234.0
+margin_right = 641.0
+margin_bottom = 181.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "Hi there! This is placeholder text."
+text = "Hi there! This is placeholder text."
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="Control"]
+wait_time = 0.05
+autostart = true
+
+[node name="Button" type="Button" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -368.115
+margin_top = -48.592
+margin_right = 359.885
+margin_bottom = 51.408
+custom_fonts/font = SubResource( 2 )
+text = "Hi"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -368.115
+margin_top = 73.5855
+margin_right = 359.885
+margin_bottom = 173.586
+custom_fonts/font = SubResource( 3 )
+text = ">:("
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -29,50 +133,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 24.0
-margin_top = 27.0
-margin_right = 331.0
-margin_bottom = 84.0
-bbcode_enabled = true
-bbcode_text = "Hi there! This is placeholder text."
-text = "Hi there! This is placeholder text."
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Timer" type="Timer" parent="."]
-wait_time = 0.05
-autostart = true
-
-[node name="Button" type="Button" parent="."]
-margin_left = 41.0
-margin_top = 58.0
-margin_right = 91.0
-margin_bottom = 78.0
-text = "Hi"
-script = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button2" type="Button" parent="."]
-margin_left = 167.0
-margin_top = 58.0
-margin_right = 217.0
-margin_bottom = 78.0
-text = ">:("
-script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Happy" type="RichTextLabel" parent="."]
-margin_left = 24.0
-margin_top = 27.0
-margin_right = 331.0
-margin_bottom = 84.0
+visible = false
+margin_left = 373.5
+margin_top = 158.0
+margin_right = 680.5
+margin_bottom = 215.0
 bbcode_enabled = true
 script = ExtResource( 5 )
 __meta__ = {
@@ -80,20 +146,16 @@ __meta__ = {
 }
 
 [node name="angry" type="RichTextLabel" parent="."]
-margin_left = 24.0
-margin_top = 27.0
-margin_right = 331.0
-margin_bottom = 84.0
+visible = false
+margin_left = 345.0
+margin_top = 19.5
+margin_right = 652.0
+margin_bottom = 76.5
 bbcode_enabled = true
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 130, -66 )
-texture = ExtResource( 8 )
-script = ExtResource( 9 )
 
 [node name="Timer2" type="Timer" parent="."]
 wait_time = 0.05
@@ -113,27 +175,21 @@ script = ExtResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="hideSprite" from="RichTextLabel" to="Sprite" method="_on_RichTextLabel_hideSprite"]
-[connection signal="releaseTheButtons" from="RichTextLabel" to="Button2" method="_on_RichTextLabel_releaseTheButtons"]
-[connection signal="releaseTheButtons" from="RichTextLabel" to="Button" method="_on_RichTextLabel_releaseTheButtons"]
-[connection signal="showSprite" from="RichTextLabel" to="Sprite" method="_on_RichTextLabel_showSprite"]
-[connection signal="timeout" from="Timer" to="RichTextLabel" method="_on_Timer_timeout"]
-[connection signal="pressed" from="Button" to="Timer2" method="_on_Button_pressed"]
-
-[connection signal="pressed" from="Button" to="RichTextLabel" method="_on_Button_pressed"]
-[connection signal="pressed" from="Button" to="Happy" method="_on_Button_pressed"]
-[connection signal="button_up" from="Button2" to="Button2" method="_on_Button2_button_up"]
-[connection signal="pressed" from="Button2" to="Timer3" method="_on_Button2_pressed"]
-
-[connection signal="pressed" from="Button2" to="RichTextLabel" method="_on_Button2_pressed"]
-[connection signal="pressed" from="Button2" to="angry" method="_on_Button2_pressed"]
-[connection signal="pressed" from="Button2" to="Button2" method="_on_Button2_pressed"]
-[connection signal="byeButtons" from="Happy" to="Button2" method="_on_Happy_byeButtons"]
-[connection signal="byeButtons" from="Happy" to="Button" method="_on_Happy_byeButtons"]
-[connection signal="endSequence" from="Happy" to="Sprite" method="_on_Happy_endSequence"]
-[connection signal="goodChoice" from="Happy" to="RichTextLabel2" method="_on_Happy_goodChoice"]
-[connection signal="byeButtons" from="angry" to="Button2" method="_on_angry_byeButtons"]
-[connection signal="byeButtons" from="angry" to="Button" method="_on_angry_byeButtons"]
-[connection signal="endSequence" from="angry" to="Sprite" method="_on_angry_endSequence"]
-[connection signal="timeout" from="Timer2" to="Happy" method="_on_Timer2_timeout"]
-[connection signal="timeout" from="Timer3" to="angry" method="_on_Timer3_timeout"]
+[connection signal="hideBox" from="Control/RichTextLabel" to="Control/Box" method="_on_RichTextLabel_hideBox"]
+[connection signal="hideButtons" from="Control/RichTextLabel" to="Control/Button2" method="_on_RichTextLabel_hideButtons"]
+[connection signal="hideButtons" from="Control/RichTextLabel" to="Control/Button" method="_on_RichTextLabel_hideButtons"]
+[connection signal="hideSprite" from="Control/RichTextLabel" to="Control/Sprite" method="_on_RichTextLabel_hideSprite"]
+[connection signal="hideSprite2" from="Control/RichTextLabel" to="Control/Sprite2" method="_on_RichTextLabel_hideSprite2"]
+[connection signal="hideSprite3" from="Control/RichTextLabel" to="Control/Sprite3" method="_on_RichTextLabel_hideSprite3"]
+[connection signal="releaseTheButtons" from="Control/RichTextLabel" to="Control/Button2" method="_on_RichTextLabel_releaseTheButtons"]
+[connection signal="releaseTheButtons" from="Control/RichTextLabel" to="Control/Button" method="_on_RichTextLabel_releaseTheButtons"]
+[connection signal="showBox" from="Control/RichTextLabel" to="Control/Box" method="_on_RichTextLabel_showBox"]
+[connection signal="showSprite" from="Control/RichTextLabel" to="Control/Sprite" method="_on_RichTextLabel_showSprite"]
+[connection signal="showSprite2" from="Control/RichTextLabel" to="Control/Sprite2" method="_on_RichTextLabel_showSprite2"]
+[connection signal="showSprite3" from="Control/RichTextLabel" to="Control/Sprite3" method="_on_RichTextLabel_showSprite3"]
+[connection signal="timeout" from="Control/Timer" to="Control/RichTextLabel" method="_on_Timer_timeout"]
+[connection signal="pressed" from="Control/Button" to="Control/RichTextLabel" method="_on_Button_pressed"]
+[connection signal="button_up" from="Control/Button2" to="Control/Button2" method="_on_Button2_button_up"]
+[connection signal="pressed" from="Control/Button2" to="Timer3" method="_on_Button2_pressed"]
+[connection signal="pressed" from="Control/Button2" to="Control/RichTextLabel" method="_on_Button2_pressed"]
+[connection signal="pressed" from="Control/Button2" to="Control/Button2" method="_on_Button2_pressed"]

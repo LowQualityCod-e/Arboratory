@@ -1,15 +1,16 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=37 format=2]
 
 [ext_resource path="res://Fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://PlantingNotifier.gd" type="Script" id=2]
 [ext_resource path="res://Fonts/Itim-Regular.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Progress.gd" type="Script" id=4]
 [ext_resource path="res://Number.gd" type="Script" id=5]
+[ext_resource path="res://Assets/HUD/level_container.png" type="Texture" id=6]
 [ext_resource path="res://Assets/HUD/button_orange.png" type="Texture" id=7]
-[ext_resource path="res://Assets/HUD/levelBackground.png" type="Texture" id=8]
+[ext_resource path="res://Assets/HUD/level_bar_container.png" type="Texture" id=8]
 [ext_resource path="res://Assets/HUD/title.png" type="Texture" id=9]
+[ext_resource path="res://Assets/HUD/level_fill.png" type="Texture" id=10]
 [ext_resource path="res://Assets/HUD/level_bar.png" type="Texture" id=11]
-[ext_resource path="res://Assets/HUD/level_bar_filled.png" type="Texture" id=12]
 
 [sub_resource type="DynamicFont" id=1]
 size = 20
@@ -221,6 +222,27 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="LavenTree" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RainTree" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarbleTree" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="ClearPlots" type="Button" parent="."]
 margin_right = 12.0
 margin_bottom = 20.0
@@ -341,17 +363,26 @@ margin_bottom = 42.0
 margin_right = 200.0
 margin_bottom = 42.0
 
+[node name="Sprite" type="Sprite" parent="ProgressBar/HBoxContainer/VBoxContainer/HBoxContainer/Words"]
+position = Vector2( 351.892, 21.888 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+
 [node name="Background" type="NinePatchRect" parent="ProgressBar/HBoxContainer/VBoxContainer/HBoxContainer/Words"]
 margin_right = 200.0
 margin_bottom = 42.0
 rect_min_size = Vector2( 200, 40 )
-texture = ExtResource( 8 )
+
+[node name="numBG" type="Sprite" parent="ProgressBar/HBoxContainer/VBoxContainer/HBoxContainer/Words/Background"]
+position = Vector2( 119.542, 20.2043 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
 
 [node name="LevelText" type="TextureRect" parent="ProgressBar/HBoxContainer/VBoxContainer/HBoxContainer/Words/Background"]
-margin_left = -13.9797
-margin_top = -14.9783
-margin_right = 128.02
-margin_bottom = 67.0217
+margin_left = 50.0006
+margin_top = 32.1651
+margin_right = 192.001
+margin_bottom = 114.165
 texture = ExtResource( 9 )
 stretch_mode = 4
 __meta__ = {
@@ -379,7 +410,7 @@ margin_right = 530.0
 margin_bottom = 42.0
 value = 50.0
 texture_under = ExtResource( 11 )
-texture_progress = ExtResource( 12 )
+texture_progress = ExtResource( 10 )
 script = ExtResource( 4 )
 [connection signal="pressed" from="WaterTree" to="." method="_on_WaterTree_pressed"]
 [connection signal="pressed" from="FireTree" to="." method="_on_FireTree_pressed"]
@@ -393,6 +424,9 @@ script = ExtResource( 4 )
 [connection signal="pressed" from="SandTree" to="." method="_on_SandTree_pressed"]
 [connection signal="pressed" from="BubbleTree" to="." method="_on_BubbleTree_pressed"]
 [connection signal="pressed" from="TreeTree" to="." method="_on_TreeTree_pressed"]
+[connection signal="pressed" from="LavenTree" to="." method="_on_LavenTree_pressed"]
+[connection signal="pressed" from="RainTree" to="." method="_on_RainTree_pressed"]
+[connection signal="pressed" from="MarbleTree" to="." method="_on_MarbleTree_pressed"]
 [connection signal="pressed" from="ClearPlots" to="." method="_on_ClearPlots_pressed"]
 [connection signal="pressed" from="ClearSinglePlot" to="." method="_on_ClearSinglePlot_pressed"]
 [connection signal="pressed" from="Return" to="." method="_on_Return_pressed"]

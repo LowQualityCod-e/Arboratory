@@ -30,11 +30,12 @@ __meta__ = {
 [node name="TextureButton" type="Button" parent="."]
 anchor_right = 0.431
 anchor_bottom = 0.218
-margin_left = 133.02
-margin_top = 380.907
-margin_right = 256.02
-margin_bottom = 252.517
-text = "Start! (Date?)"
+margin_left = 774.0
+margin_top = 671.0
+margin_right = 1163.0
+margin_bottom = 618.61
+flat = true
+expand_icon = true
 __meta__ = {
 "_edit_use_anchors_": false
 }

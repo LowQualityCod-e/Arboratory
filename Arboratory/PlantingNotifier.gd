@@ -12,6 +12,9 @@ signal plant_bunny
 signal plant_sand
 signal plant_bubble
 signal plant_tree
+signal plant_laven
+signal plant_rain
+signal plant_marble
 signal clear
 signal clear_single
 signal water_tree
@@ -67,6 +70,9 @@ func _ready():
 	$SandTree.hide()
 	$BubbleTree.hide()
 	$TreeTree.hide()
+	$LavenTree.hide()
+	$RainTree.hide()
+	$MarbleTree.hide()
 	$ProgressBar.hide()
 	
 #updates the planting message
@@ -150,6 +156,15 @@ func _on_BubbleTree_pressed():
 	
 func _on_TreeTree_pressed():
 	emit_signal("plant_tree","tree_tree")
+	
+func _on_LavenTree_pressed():
+	emit_signal("plant_laven","laven_tree")
+	
+func _on_RainTree_pressed():
+	emit_signal("plant_rain","rain_tree")
+	
+func _on_MarbleTree_pressed():
+	emit_signal("plant_marble","marble_tree")
 
 #clear all plots
 func _on_ClearPlots_pressed():
@@ -169,6 +184,7 @@ func _open_tree_control_menu():
 	$SnoopTree.hide()
 	$BubbleTree.hide()
 	$TreeTree.hide()
+	$LavenTree.hide()
 	$ClearPlots.hide()
 	$ClearSinglePlot.show()
 	$Return.show()
@@ -201,6 +217,15 @@ func _on_treeDex_button2_pressed():
 
 func _on_ExitFarm_pressed():
 	emit_signal("exit_farm")
+
+
+
+
+
+
+
+
+
 
 
 

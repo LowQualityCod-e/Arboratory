@@ -23,6 +23,9 @@ signal bunny_tree_pressed
 signal sand_tree_pressed
 signal bubble_tree_pressed
 signal tree_tree_pressed
+signal laven_tree_pressed
+signal rain_tree_pressed
+signal marble_tree_pressed
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -81,6 +84,12 @@ func slot_gui_input(event: InputEvent, slot: SlotClass):
 				emit_signal("bubble_tree_pressed")
 			elif slot.tree_appearance == "tree_sapling"&&slot.inventory_item:
 				emit_signal("tree_tree_pressed")
+			elif slot.tree_appearance == "laven_sapling"&&slot.inventory_item:
+				emit_signal("laven_tree_pressed")
+			elif slot.tree_appearance == "rain_sapling"&&slot.inventory_item:
+				emit_signal("rain_tree_pressed")
+			elif slot.tree_appearance == "marble_sapling"&&slot.inventory_item:
+				emit_signal("marble_tree_pressed")
 			else:
 				print("not ready")
 			last_slot_clicked = slot
@@ -114,6 +123,12 @@ func _remove_merged_seeds(old,other):
 				inv_slot._remove_inventory_item()
 #				break
 				
+func _remove_item_merge_seeds(old):
+	var seedData = ImportData.seed_data
+	for inv_slot in inventory_slots.get_children():
+		if inv_slot.inventory_item:
+			if seedData[inv_slot.inventory_item.item_number]["seedImage"] == old.get_node("SeedImage").texture:
+				inv_slot._remove_inventory_item()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
@@ -125,6 +140,17 @@ func _remove_merged_seeds(old,other):
 			#tree._choose_tree(tree_type)
 			#tree.set_position(Vector2(event.position.x,event.position.y))
 			#tree_type = null
+func _can_item_merge(type):
+	var count = 0
+	for member in get_tree().get_nodes_in_group("seedGroup"):
+		if member.seed_name == type:
+			count+=1
+	if count == 2:
+		return true
+	else:
+		return false
+			
+
 func _can_merge(which,other):
 	var seedData = ImportData.seed_data
 	var count = 0
@@ -136,9 +162,13 @@ func _can_merge(which,other):
 		for member in get_tree().get_nodes_in_group("seedGroup"):
 			if member.seed_name == "sand":
 				return false
-	elif (which.seed_name == "fire" and other.seed_name == "air") or (which.seed_name == "air" and other.seed_name == "fire") or (which.seed_name == "air" and other.seed_name == "water") or (which.seed_name == "water" and other.seed_name == "air"):
+	elif (which.seed_name == "fire" and other.seed_name == "air") or (which.seed_name == "air" and other.seed_name == "fire"):
 		for member in get_tree().get_nodes_in_group("seedGroup"):
 			if member.seed_name == "lightning":
+				return false
+	elif (which.seed_name == "air" and other.seed_name == "water") or (which.seed_name == "water" and other.seed_name == "air"):
+		for member in get_tree().get_nodes_in_group("seedGroup"):
+			if member.seed_name == "rain":
 				return false
 	elif (which.seed_name == "fire" and other.seed_name == "water") or (which.seed_name == "water" and other.seed_name == "fire"):
 		for member in get_tree().get_nodes_in_group("seedGroup"):

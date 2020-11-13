@@ -58,6 +58,7 @@ func _on_aSeeds_area_shape_entered(area_id, area, area_shape, self_shape):
 			#is_pot_vacant = false
 			get_tree().set_group("seedGroup","is_pot_vacant",false)
 			get_tree().set_group("seedGroup","seed_to_merge1",self) ##
+			get_tree().set_group("mergeGroup","seed_to_merge1",self)
 			get_tree().set_group("seedGroup","old_merged_seed",self) ##
 		else:
 #			self.set_position(seed_pos)
@@ -105,6 +106,24 @@ func _on_water_area_shape_entered(area_id, area, area_shape, self_shape):
 		position = Vector2(1400,150)
 		emit_signal("watered")
 		is_dragging = false
+	
+
+"""
+For mergeItems
+"""	
+func _on_mergeItem_area_shape_entered(area_id, area, area_shape, self_shape):
+#	var isPot = area.get_name()
+#	if isPot == "Pot":
+#		position = Vector2(1300,280)
+#		is_dragging = false
+	if area.get_filename() == "res://aSeeds.tscn":
+		time_to_merge = true
+		is_dragging = false
+		if time_to_merge == true && get_tree().get_root().find_node("Inventory",true,false)._can_item_merge(area.seed_name) == true:
+			seed_to_merge2 = self
+			item_merge(seed_to_merge1,seed_to_merge2)
+		else:
+			self.set_position(self.seed_pos)
 
 """
 The change seed function gets a signal when a pot is both watered and planted.
@@ -167,7 +186,38 @@ func _revert_seed(aSeed,which):
 	aSeed.get_node("SeedImage").texture = load("res://Assets/Plants/seeds/"+which+"_seed.png")
 	emit_signal("remove_from_inventory")
 	
-
+func item_merge(which, item):
+	get_tree().get_root().find_node("Inventory",true,false)._remove_item_merge_seeds(which)
+	match(which.seed_name):
+		"air":
+			match(item.seed_name):
+				"carrot":
+					get_tree().get_root().find_node("Planting",true,false)._new_seed("bunny",1)
+					print("item merge success")
+				"candy":
+					get_tree().get_root().find_node("Planting",true,false)._new_seed("cottoncandy",1)
+		"magma":
+			match(item.seed_name):
+				"unidentified_grass":
+					get_tree().get_root().find_node("Planting",true,false)._new_seed("snoop",1)
+					print("item merge success")
+		"water":
+			match(item.seed_name):
+				"lavender":
+					get_tree().get_root().find_node("Planting",true,false)._new_seed("laven",1)
+					print("item merge success")
+		"bubble":
+			match(item.seed_name):
+				"rock":
+					get_tree().get_root().find_node("Planting",true,false)._new_seed("marble",1)
+					print("item merge success")
+	time_to_merge  = false
+	merge_event = true
+			
+	which.queue_free()
+		#get_tree().set_group("seedGroup","is_pot_vacant",!is_pot_vacant)
+	self.queue_free()
+	get_tree().call_group("seedGroup","show")
 #func _connect_newSeed(newSeed):
 	#newSeed.connect("area_shape_entered",self,"_on_aSeeds_area_shape_entered")
 	#newSeed.connect("area_shape_exited",self,"_on_aSeeds_area_shape_exited")
@@ -180,7 +230,7 @@ func _merge(which, other,old):
 					"earth":
 						get_tree().get_root().find_node("Planting",true,false)._new_seed("sand",1)
 					"water":
-						get_tree().get_root().find_node("Planting",true,false)._new_seed("lightning",1)
+						get_tree().get_root().find_node("Planting",true,false)._new_seed("rain",1)
 					"fire":
 						get_tree().get_root().find_node("Planting",true,false)._new_seed("lightning",1)
 					_:
@@ -212,7 +262,7 @@ func _merge(which, other,old):
 					"earth":
 						get_tree().get_root().find_node("Planting",true,false)._new_seed("tree",1)
 					"air":
-						 get_tree().get_root().find_node("Planting",true,false)._new_seed("lightning",1)
+						 get_tree().get_root().find_node("Planting",true,false)._new_seed("rain",1)
 					_:
 						print("fail")
 			_:

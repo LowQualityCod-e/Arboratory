@@ -7,6 +7,7 @@
 		"Description": "A wise tree respected by all.  They seem to know just about everything about foliage - how convenient for me!  She even remembers phone numbers and birthdays when I forget them… Heck, she even helps me find my way back home!  I’ve never even mentioned my address to her!  Oh, wait. The tree’s potential is much more off putting than first reported."
 	},
 	"1": {
+<<<<<<< HEAD
 		"treeName": "The Marble Tree",
 		"seedImage": "res://Assets/Plants/seeds/SampleSeed.png",
 		"saplingImage": "res://Assets/Art/SamplePlant.png",
@@ -19,6 +20,20 @@
 		"saplingImage": "res://Assets/Plants/trees/laventree_owo.png",
 		"treeImage": "",
 		"Description": "Ah, it feels wonderful when your own scientific feats make clear benefits to the community. The Laventree calms their peers with their lovely scent, keeping them nice and healthy for my research.  Yes, the Laventree shares their scent to all. I wonder, is there a side of the Laventree that isn’t open to the public?  I suppose it would have to be a very special someone who could do that..."
+=======
+        "treeName": "The Marble Tree",
+		"seedImage": "res://Assets/Plants/seeds/marble_seed.png",
+		"saplingImage": "res://Assets/Plants/saplings/marble_sapling.png",
+		"treeImage": "res://Assets/Plants/trees/marble_tree",
+		"Description": "This is an example Tree Description"
+	},
+	"2": {
+        "treeName": "Lavender Tree",
+		"seedImage": "res://Assets/Plants/seeds/laven_seed.png",
+		"saplingImage": "res://Assets/Plants/saplings/laven_sapling.png",
+		"treeImage": "res://Assets/Plants/trees/laven_tree.png"   ,
+		"Description": ""
+>>>>>>> 01bb598ce6db148f4d2ffd097a5c9c559a7b968d
 	},
 	"3": {
 		"treeName": "Bunny Tree",
@@ -113,9 +128,9 @@
 	},
 	"16": {
 		"treeName": "Rain Tree",
-		"seedImage": "",
-		"saplingImage": "",
-		"treeImage": "",
+        "seedImage": "res://Assets/Plants/seeds/rain_seed.png",
+        "saplingImage": "res://Assets/Plants/saplings/rain_sapling.png",
+        "treeImage": "res://Assets/Plants/trees/rain_tree.png",
 		"Description": "This tree was created with easy maintenance in mind. Their endless rain waters not only themself but those around them, which is super convenient! Unfortunately, this tree is a little gloomy. I wonder if it's possible to cheer them up a little! "
 	},
 	"17": {
@@ -125,4 +140,5 @@
 		"treeImage": "",
 		"Description": "This tree makes people feel… a certain kind of way. Her curvy trunk and heart shaped foliage are fabled to be capable of making anyone fall in love. Valentine's day is her favorite holiday, and she prefers to be planted near rose bushes. Although she can be a bit intimidating, people say she gives amazing relationship advice. If you’re looking to start a relationship with a special someone, seek her out. "
 	}
+
 }

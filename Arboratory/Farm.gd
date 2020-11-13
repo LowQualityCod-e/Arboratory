@@ -66,7 +66,7 @@ func _close_menu():
 
 #handles mouse-click
 func _input(event):
-	if Input.is_action_pressed("ui_click"):
+	if Input.is_action_pressed("ui_touch"):
 		
 		#checks if you clicked in the grid
 		if event.position.x <1024:

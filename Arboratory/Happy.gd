@@ -10,6 +10,7 @@ var dialogue_index = 0
 signal endSequence
 signal byeButtons
 signal goodChoice
+var numPressed = 0
 
 func _ready():
 	set_bbcode(dialogue[dialogue_index])
@@ -49,9 +50,13 @@ func _input(event):
 
 
 func _on_Button_pressed():
-	show() # Replace with function body.
-	emit_signal("goodChoice")
-	emit_signal("byeButtons")
+	pass
+	#numPressed += 1
+	#if numPressed > 1:
+	#	show()
+	#show() # Replace with function body.
+	#emit_signal("goodChoice")
+	#emit_signal("byeButtons")
 
 
 func _on_Timer2_timeout():

@@ -2,13 +2,9 @@
 
 [ext_resource path="res://Pause.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Art/PauseBackground.png" type="Texture" id=2]
-[ext_resource path="res://Fonts/Lato-Regular.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Assets/Art/PauseButtonBackground.png" type="Texture" id=4]
-
-[sub_resource type="DynamicFont" id=1]
-size = 27
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 3 )
+[ext_resource path="res://Assets/HUD/resume_button.png" type="Texture" id=3]
+[ext_resource path="res://Assets/HUD/pause_menu.png" type="Texture" id=4]
+[ext_resource path="res://Assets/HUD/main_menu_button.png" type="Texture" id=5]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 pause_mode = 2
@@ -32,35 +28,46 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect" type="TextureRect" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -61.0
-margin_top = -20.0
-margin_right = 61.0
-margin_bottom = 20.0
+[node name="pause_menu" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
 texture = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Continue" type="Button" parent="TextureRect"]
+[node name="Continue" type="Button" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -61.0
-margin_top = -19.5
-margin_right = 61.0
-margin_bottom = 19.5
-custom_fonts/font = SubResource( 1 )
+margin_left = -457.239
+margin_top = -199.609
+margin_right = 456.761
+margin_bottom = 15.3913
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0.172549, 1, 0, 1 )
-text = "Continue"
+icon = ExtResource( 3 )
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="TextureRect/Continue" to="." method="_on_Continue_pressed"]
+
+[node name="Return to menu" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -457.239
+margin_top = 15.3913
+margin_right = 456.761
+margin_bottom = 230.391
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.172549, 1, 0, 1 )
+icon = ExtResource( 5 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Continue" to="." method="_on_Continue_pressed"]
+[connection signal="pressed" from="Return to menu" to="." method="_on_Return_to_menu_pressed"]
