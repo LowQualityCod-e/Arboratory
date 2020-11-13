@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sand_sapling.png-b907958e6166c2a3950ee0ede0aa0935.stex"
+path="res://.import/Sand_Sapling.png-0346b9a48c67db97d0f38f5fcd8ad247.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Plants/saplings/sand_sapling.png"
-dest_files=[ "res://.import/sand_sapling.png-b907958e6166c2a3950ee0ede0aa0935.stex" ]
+source_file="res://Assets/Plants/saplings/Sand_Sapling.png"
+dest_files=[ "res://.import/Sand_Sapling.png-0346b9a48c67db97d0f38f5fcd8ad247.stex" ]
 
 [params]
 

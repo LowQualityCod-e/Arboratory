@@ -40,8 +40,6 @@ func on_item_selected(id):
 
 #Closes the Dex and unpauses the main game
 func _on_exit_button_pressed():
-	get_tree().get_root().find_node("FarmButton",true,false).show()
-	get_tree().get_root().find_node("treeDex_button",true,false).show()
 	self.visible = false
 	get_tree().paused = false
 	get_tree().call_group("seedGroup","show")

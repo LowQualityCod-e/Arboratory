@@ -50,16 +50,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="VolumeButton"]
-margin_left = 90.0
-margin_top = 44.0
-margin_right = 140.0
-margin_bottom = 94.0
-rect_min_size = Vector2( 50, 50 )
-rect_scale = Vector2( 4, 4 )
-text = "Volume
-"
-
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_left = 152.0
 margin_top = 166.0
@@ -87,15 +77,5 @@ expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Label" type="Label" parent="Button"]
-margin_left = 48.0
-margin_top = 28.0
-margin_right = 98.0
-margin_bottom = 78.0
-rect_min_size = Vector2( 50, 50 )
-rect_scale = Vector2( 3, 3 )
-text = "Credits
-"
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="VolumeButton" to="." method="_on_VolumeButton_pressed"]
