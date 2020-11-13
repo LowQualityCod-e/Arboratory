@@ -119,7 +119,7 @@ func _on_mergeItem_area_shape_entered(area_id, area, area_shape, self_shape):
 	if area.get_filename() == "res://aSeeds.tscn":
 		time_to_merge = true
 		is_dragging = false
-		if time_to_merge == true && get_tree().get_root().find_node("Inventory",true,false)._can_item_merge(area.seed_name) == true:
+		if time_to_merge == true && get_tree().get_root().find_node("Inventory",true,false)._can_item_merge(area.seed_name, self.seed_name) == true:
 			seed_to_merge2 = self
 			item_merge(seed_to_merge1,seed_to_merge2)
 		else:

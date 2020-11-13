@@ -29,10 +29,20 @@ func gain_level():
 		get_tree().get_root().find_node("Planting",true,false)._new_merge_item("candy")
 		get_tree().get_root().find_node("Planting",true,false)._new_merge_item("lavender")
 		get_tree().get_root().find_node("Planting",true,false)._new_merge_item("rock")
+		for member in get_tree().get_nodes_in_group("seedGroup"):
+			member.set_position(member.seed_pos)
+		get_tree().get_root().find_node("RichTextLabel",true,false).dialogue_index = 0
+		get_tree().get_root().find_node("RichTextLabel",true,false)._ready()
+	if level == 5:
+		for member in get_tree().get_nodes_in_group("seedGroup"):
+			member.set_position(member.seed_pos)
+		get_tree().get_root().find_node("RichTextLabel",true,false).dialogue_index = 0
+		get_tree().get_root().find_node("RichTextLabel",true,false)._ready()
 
 #returns the xp needed to get to the next level
 func get_next_level_xp(level_num):
 	return 30 * level_num
+	#return 10 * level_num
 	
 	
 #getters

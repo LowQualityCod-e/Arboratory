@@ -50,6 +50,7 @@ func select_dialogue():
 			emit_signal("hideSprite3")
 		3:
 			set_process_input(true)
+			show()
 			dialogue = ["insert item dialogue here"]
 			
 			info = {0: {"char": "knowledge", "dialogue index": 0, "choices": 0, 
@@ -58,7 +59,9 @@ func select_dialogue():
 			emit_signal("showSprite")
 			emit_signal("hideSprite2")
 			emit_signal("hideSprite3")
+
 		5:
+			show()
 			set_process_input(true)
 			dialogue = ["Uh oh", "Looks like there's a new tree on the block",
 			"I wonder what she wants now..."]
@@ -94,6 +97,7 @@ func select_dialogue():
 			emit_signal("hideSprite3")
 			
 			#choices = 4
+
 			
 		_:
 			hide()

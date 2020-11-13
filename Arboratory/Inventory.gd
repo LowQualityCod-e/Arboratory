@@ -113,22 +113,25 @@ func _remove_merged_seeds(old,other):
 	var seedData = ImportData.seed_data
 	for inv_slot in inventory_slots.get_children():
 		if inv_slot.inventory_item:
-			if seedData[inv_slot.inventory_item.item_number]["seedImage"] == old.get_node("SeedImage").texture:
-				inv_slot._remove_inventory_item()
+			if inv_slot.inventory_item.item_number != null:
+				if seedData[inv_slot.inventory_item.item_number]["seedImage"] == old.get_node("SeedImage").texture:
+					inv_slot._remove_inventory_item()
 #				break
 				
 	for inv_slot in inventory_slots.get_children():
 		if inv_slot.inventory_item:
-			if seedData[inv_slot.inventory_item.item_number]["seedImage"] == other.get_node("SeedImage").texture:
-				inv_slot._remove_inventory_item()
+			if inv_slot.inventory_item.item_number != null:
+				if seedData[inv_slot.inventory_item.item_number]["seedImage"] == other.get_node("SeedImage").texture:
+					inv_slot._remove_inventory_item()
 #				break
 				
 func _remove_item_merge_seeds(old):
 	var seedData = ImportData.seed_data
 	for inv_slot in inventory_slots.get_children():
 		if inv_slot.inventory_item:
-			if seedData[inv_slot.inventory_item.item_number]["seedImage"] == old.get_node("SeedImage").texture:
-				inv_slot._remove_inventory_item()
+			if inv_slot.inventory_item.item_number != null:
+				if seedData[inv_slot.inventory_item.item_number]["seedImage"] == old.get_node("SeedImage").texture:
+					inv_slot._remove_inventory_item()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
@@ -140,15 +143,49 @@ func _remove_item_merge_seeds(old):
 			#tree._choose_tree(tree_type)
 			#tree.set_position(Vector2(event.position.x,event.position.y))
 			#tree_type = null
-func _can_item_merge(type):
+func _can_item_merge(type, item):
 	var count = 0
-	for member in get_tree().get_nodes_in_group("seedGroup"):
-		if member.seed_name == type:
-			count+=1
+	match (item):
+		"rock":
+			if !type == "bubble":
+				return false
+			else:
+				for member in get_tree().get_nodes_in_group("seedGroup"):
+					if member.seed_name == type:
+						count+=1
+		"lavender":
+			if !type == "water":
+				return false
+			else:
+				for member in get_tree().get_nodes_in_group("seedGroup"):
+					if member.seed_name == type:
+						count+=1
+		"unidentified_grass":
+			if !type == "magma":
+				return false
+			else:
+				for member in get_tree().get_nodes_in_group("seedGroup"):
+					if member.seed_name == type:
+						count+=1
+		"candy":
+			if !type == "air":
+				return false
+			else:
+				for member in get_tree().get_nodes_in_group("seedGroup"):
+					if member.seed_name == type:
+						count+=1
+		"carrot":
+			if !type == "air":
+				return false
+			else:
+				for member in get_tree().get_nodes_in_group("seedGroup"):
+					if member.seed_name == type:
+						count+=1
 	if count == 2:
 		return true
 	else:
 		return false
+
 			
 
 func _can_merge(which,other):

@@ -156,6 +156,8 @@ Shows the dex and pauses the rest of the game when the dex button is pressed.
 		
 
 func _on_treeDex_button_pressed():
+	$FarmButton.hide()
+	$treeDex_button.hide()
 	$treeDex.show()
 	get_tree().call_group("seedGroup","hide")
 	get_tree().call_group("mergeGroup","hide")
