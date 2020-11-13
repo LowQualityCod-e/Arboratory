@@ -1,107 +1,128 @@
 {
-	"Template": {
-        "treeName": "",
+	"0": {
+		"treeName": "The Tree of Knowledge",
 		"seedImage": "",
 		"saplingImage": "",
 		"treeImage": "",
-		"Description": ""
+		"Description": "A wise tree respected by all.  They seem to know just about everything about foliage - how convenient for me!  She even remembers phone numbers and birthdays when I forget them… Heck, she even helps me find my way back home!  I’ve never even mentioned my address to her!  Oh, wait. The tree’s potential is much more off putting than first reported."
 	},
 	"1": {
-        "treeName": "The Sample Tree",
+		"treeName": "The Marble Tree",
 		"seedImage": "res://Assets/Plants/seeds/SampleSeed.png",
 		"saplingImage": "res://Assets/Art/SamplePlant.png",
 		"treeImage": "",
-		"Description": "This is an example Tree Description"
+		"Description": "Huzzah!  My first breakthrough.  Such a lovely tree to start out with, as well.  Leaves like glass which refract light, a twisting trunk that one can race marbles down… Every aspect of their design works into a coherent system. The same pride seems to be reflected in their behavior, as well… If too many leaves fall off their behavior becomes rather erratic.  Warning: do not mention how they have ‘lost their marbles’ or you will get things thrown at you.  Investigating trees is a dangerous craft, it seems."
 	},
 	"2": {
-        "treeName": "Lavender Tree",
+		"treeName": "Lavender Tree",
 		"seedImage": "res://Assets/Plants/seeds/seed-laventree.png",
 		"saplingImage": "res://Assets/Plants/trees/laventree_owo.png",
-		"treeImage": ""   ,
-		"Description": ""
+		"treeImage": "",
+		"Description": "Ah, it feels wonderful when your own scientific feats make clear benefits to the community. The Laventree calms their peers with their lovely scent, keeping them nice and healthy for my research.  Yes, the Laventree shares their scent to all. I wonder, is there a side of the Laventree that isn’t open to the public?  I suppose it would have to be a very special someone who could do that..."
 	},
 	"3": {
-        "treeName": "Bunny Tree",
+		"treeName": "Bunny Tree",
 		"seedImage": "res://Assets/Plants/seeds/bunny_seed.png",
 		"saplingImage": "res://Assets/Plants/saplings/bunny_sapling.png",
-		"treeImage": "",
-		"Description": ""
+		"treeImage": "res://Assets/Plants/trees/bunny_tree.png",
+		"Description": "There’s something magical about this cute little tree. Although it looks like that rabbit is stuck inside the leaves, it's actually a part of the structure of the tree. The foliage surrounding it is soft to the touch, and it seems to enjoy being pet! It smells like carrots, and in the right lighting, it sparkles ever so slightly. I wonder what other mystical properties this tree possesses. I’ll have to spend more time playing with it to find out!"
 	},
 	"4": {
-        "treeName": "Lightning Tree",
+		"treeName": "Lightning Tree",
 		"seedImage": "res://Assets/Plants/seeds/lightning_seed.png",
 		"saplingImage": "res://Assets/Plants/saplings/lightning_sapling.png",
-		"treeImage": "",
-		"Description": ""
+		"treeImage": "res://Assets/Plants/trees/lightning_tree.png",
+		"Description": "This tree could probably power the entire facility if we could figure out how to harness her power. This tree might revolutionize clean energy! Unfortunately, any researcher that gets close enough to learn anything is in for quite a shock! There was quite a spark between us last time we interacted, so maybe there’s something going on there. "
 	},
-    "5": {
-        "treeName": "Sand Tree",
+	"5": {
+		"treeName": "Sand Tree",
 		"seedImage": "res://Assets/Plants/seeds/sand_seed.png",
 		"saplingImage": "res://Assets/Plants/saplings/sand_sapling.png",
 		"treeImage": "res://Assets/Plants/trees/sand_tree.png",
-		"Description": ""
+		"Description": "I usually hate the prospect of getting hot sand everywhere, but this tree has been rather polite about keeping it within their own pot.  How courteous!  It seems that even something as thin, light and inconsistent as sand can take on consistent form under the right leadership.  Thank goodness for sentient trees.  Maybe I can ask how they do it over dinner sometime... "
 	},
-    "6": {
-        "treeName": "Air Tree",
+	"6": {
+		"treeName": "Air Tree",
 		"seedImage": "res://Assets/Plants/seeds/air_seed.png",
 		"saplingImage": "res://Assets/Plants/saplings/air_sapling.png",
 		"treeImage": "res://Assets/Plants/trees/air_tree.png",
-		"Description": ""
+		"Description": "The area around this tree is always a little breezy. Although its foliage looks like it’d feel like a cotton ball, it's actually made of water vapor, so you can move your hand through it and feel almost nothing. The bark that makes up this tree is surprisingly light; if it wasn’t rooted to the ground, I’d imagine this tree would float in the air. Although they are a little air-headed, this tree always does its best and goes with the flow. They can get along with just about anybody. "
 	},
-    "7": {
-        "treeName": "Cotton Candy Tree",
+	"7": {
+		"treeName": "Cotton Candy Tree",
 		"seedImage": "res://Assets/Plants/seeds/cotton_candy_seed.png",
 		"saplingImage": "res://Assets/Plants/saplings/cotton_candy_sapling.png",
-		"treeImage": "",
-		"Description": ""
+		"treeImage": "res://Assets/Plants/trees/cotton_candy_tree.png",
+		"Description": "The cotton candy tree is super sweet inside and out! Their trunk has the texture of paper, and their fluffy foliage smells absolutely divine. They do get a little sticky in the rain, though, and they do tend to attract insects. The fragility of this tree makes it a little hard to manage, but an experienced researcher like myself is more than capable of protecting this rare specimen."
 	},
-    "8": {
-        "treeName": "Earth Tree",
+	"8": {
+		"treeName": "Earth Tree",
 		"seedImage": "res://Assets/Plants/seeds/earth_seed.png",
 		"saplingImage": "res://Assets/Plants/saplings/earth_sapling.png",
 		"treeImage": "res://Assets/Plants/trees/earth_tree.png",
-		"Description": ""
+		"Description": "If you take a closer look at the tree, you can see the little islands on top of it are actually floating, which is absolutely fascinating. I wonder if it would be possible to make a much larger version of this tree? Floating cities could be built on top of it. This tree has the perfect temperament for that sort of thing too. They’re down to earth and level headed. They are a great listener or shoulder to cry on. "
 	},
-    "9": {
-        "treeName": "Fire Tree",
+	"9": {
+		"treeName": "Fire Tree",
 		"seedImage": "res://Assets/Plants/seeds/fire_seed.png",
 		"saplingImage": "res://Assets/Plants/saplings/fire_sapling.png",
 		"treeImage": "res://Assets/Plants/trees/fire_tree.png",
-		"Description": ""
+		"Description": "This tree is a forest fire waiting to happen, but the prospect of developing a flame resistant tree was too appealing to pass up! The bark itself is unaffected by the flames, and the fire shooting from the top comes from the tree's molten core. The trunk of the tree is warm to the touch, but in a more gentle, comfortable way. They smell just like a campfire, but does not take kindly to being used to make smores. I still mourn for my incinerated marshmallow."
 	},
-    "10": {
-        "treeName": "Magma Tree",
+	"10": {
+		"treeName": "Magma Tree",
 		"seedImage": "res://Assets/Plants/seeds/magma_seed.png",
 		"saplingImage": "res://Assets/Plants/saplings/magma_sapling.png",
 		"treeImage": "res://Assets/Plants/trees/magma_tree.png",
-		"Description": ""
+		"Description": "The most fascinating thing about the magma tree is the seemingly infinite production of magma they are capable of! Magma flows continuously from the branches at the top yet the trunk beneath remains sturdy. At first I hypothesized that the bark had developed fire resistance similar to the Fire Tree, but upon further examination, I now believe the tree has developed a shell of sorts made of igneous rock. Fascinating! The magma tree is incredibly hot, unbearably so in fact. Still I couldn’t help but watch the light-show from afar; their colors put lava lamps to shame. Maybe one day, I can develop protective gear that will allow me to get closer to them… for science, of course!"
 	},
-    "11": {
-        "treeName": "Snoop Dog Tree",
+	"11": {
+		"treeName": "Snoop Dog Tree",
 		"seedImage": "res://Assets/Plants/seeds/snoop_dogg_seed.png",
 		"saplingImage": "res://Assets/Plants/saplings/snoop_dogg_sapling.png",
 		"treeImage": "res://Assets/Plants/trees/snoop_dogg_tree.png",
-		"Description": ""
+		"Description": "This is the tree to hang out with when you’re looking for a good time. This tree has its own successful tree music career and has cemented itself a tree pop culture icon. People are always happier when Snoop Dogg tree is around. "
 	},
-    "12": {
-        "treeName": "Water Tree",
+	"12": {
+		"treeName": "Water Tree",
 		"seedImage": "res://Assets/Plants/seeds/water_seed.png",
 		"saplingImage": "res://Assets/Plants/saplings/water_sapling.png",
 		"treeImage": "res://Assets/Plants/trees/water_tree.png",
-		"Description": ""
+		"Description": "Watching the water tree’s liquid foliage flow in the air is mesmerizing. We’ll have to study it further to see exactly how it maintains its shape. Anyway, this tree is one cool customer, they’re generally unfazed by what is going on around it. It's tranquil, but has a powerful presence I just adore. Hanging out with this tree is a great way to relax after a long day of research. "
 	},
-    "13": {
-        "treeName": "Bubble Tree",
-        "seedImage": "res://Assets/Plants/seeds/bubble_seed.png",
-        "saplingImage": "res://Assets/Plants/saplings/bubble_sapling.png",
-        "treeImage": "res://Assets/Plants/trees/bubble_tree.png",
-        "Description": ""
-    },
-    "14": {
-        "treeName": "Tree Tree",
-        "seedImage": "res://Assets/Plants/seeds/tree_seed.png",
-        "saplingImage": "res://Assets/Plants/saplings/tree_sapling.png",
-        "treeImage": "res://Assets/Plants/trees/tree_tree.png",
-        "Description": ""
-    }
+	"13": {
+		"treeName": "Bubble Tree",
+		"seedImage": "res://Assets/Plants/seeds/bubble_seed.png",
+		"saplingImage": "res://Assets/Plants/saplings/bubble_sapling.png",
+		"treeImage": "res://Assets/Plants/trees/bubble_tree.png",
+		"Description": "This tree is simply lovely. It always lifts everyone’s spirits to see bubbles floating around the greenhouse and the tree smells just like soap. The area around its plot is always kept very clean, albeit a little slippery. The tree’s personality is equally as pleasant. They’re bubbly in more ways than one; anyone who talks to this tree is drawn into their effervescent nature and child-like playfulness. They lift the spirits of anyone they come into contact with!"
+	},
+	"14": {
+		"treeName": "Tree Tree",
+		"seedImage": "res://Assets/Plants/seeds/tree_seed.png",
+		"saplingImage": "res://Assets/Plants/saplings/tree_sapling.png",
+		"treeImage": "res://Assets/Plants/trees/tree_tree.png",
+		"Description": "It seems we’ve come full circle with this one! There is nothing wrong with getting back to the basics though; personally, I enjoy the classics. This tree is definitely a girl-next-door type. She’s predictable, but dependable. Plus, the apples she makes are delicious! I should make a pie sometime. "
+	},
+	"15": {
+		"treeName": "Forbidden Tree",
+		"seedImage": "",
+		"sapplingImage": "",
+		"treeImage": "",
+		"Description": "I know it's probably in my best interest to stay away from this tree, but it's just too tempting! The tree and snake wrapped around it are actually a singular organism. I’m not sure exactly how they’re connected, but I do know everytime I go near it, the snake whispers to me to eat the fruit that grows at the top. Of course, I’ve ignored him so far, but it’d be a lie to say I’m not a little curious about what the fruit tastes like. "
+	},
+	"16": {
+		"treeName": "Rain Tree",
+		"seedImage": "",
+		"saplingImage": "",
+		"treeImage": "",
+		"Description": "This tree was created with easy maintenance in mind. Their endless rain waters not only themself but those around them, which is super convenient! Unfortunately, this tree is a little gloomy. I wonder if it's possible to cheer them up a little! "
+	},
+	"17": {
+		"treeName": "Love Tree",
+		"seedImage": "",
+		"saplingImage": "",
+		"treeImage": "",
+		"Description": "This tree makes people feel… a certain kind of way. Her curvy trunk and heart shaped foliage are fabled to be capable of making anyone fall in love. Valentine's day is her favorite holiday, and she prefers to be planted near rose bushes. Although she can be a bit intimidating, people say she gives amazing relationship advice. If you’re looking to start a relationship with a special someone, seek her out. "
+	}
 }

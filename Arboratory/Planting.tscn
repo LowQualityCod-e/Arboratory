@@ -75,12 +75,6 @@ texture = ExtResource( 7 )
 position = Vector2( 1495, 595.5 )
 texture = ExtResource( 7 )
 
-[node name="treeDex" parent="." instance=ExtResource( 4 )]
-pause_mode = 2
-visible = false
-margin_left = 1.59003
-margin_right = 1.59003
-
 [node name="treeDex_button" type="Button" parent="."]
 margin_left = 830.0
 margin_top = 100.0
@@ -128,6 +122,12 @@ expand_icon = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="treeDex" parent="." instance=ExtResource( 4 )]
+pause_mode = 2
+visible = false
+margin_left = 1.59003
+margin_right = 1.59003
 
 [node name="labBackground" type="Sprite" parent="."]
 show_behind_parent = true

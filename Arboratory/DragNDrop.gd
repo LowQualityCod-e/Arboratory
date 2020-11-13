@@ -102,7 +102,7 @@ The watered function starts the growth process by sending a signal to Merge Area
 func _on_water_area_shape_entered(area_id, area, area_shape, self_shape):
 	var isPot = area.get_name()
 	if isPot == "Pot":
-		position = Vector2(1400,200)
+		position = Vector2(1400,150)
 		emit_signal("watered")
 		is_dragging = false
 
